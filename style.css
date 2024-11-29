@@ -4,17 +4,19 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f0f8ff;
-  background-image: url('https://imgur.com/a/Yr0gFuF'); /* Replace with your background image link */
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   color: #000;
+  
+  /* Add background image */
+  background-image: url('https://imgur.com/a/Yr0gFuF'); /* Replace with your actual image URL */
+  background-size: cover; /* Ensure the image covers the entire page */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Optional: Keeps the image fixed while scrolling */
 }
 
 header {
   text-align: center;
   padding: 20px;
-  background-color: #87cefa;
+  background-color: rgba(135, 206, 250, 0.8); /* Semi-transparent background for header */
   color: #fff;
 }
 
@@ -83,6 +85,6 @@ ul {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #87cefa;
+  background-color: rgba(135, 206, 250, 0.8); /* Semi-transparent background for footer */
   color: #fff;
 }
