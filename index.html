@@ -26,6 +26,25 @@
       color: white;
       font-size: 2em;
       border-radius: 0 0 20px 20px;
+      position: relative;
+    }
+
+    .discord-button {
+      display: inline-block;
+      background: #5865f2;
+      color: white;
+      font-size: 1em;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s ease;
+      position: relative;
+      top: -40px; /* Position above the header */
+    }
+
+    .discord-button:hover {
+      background: #4752c4;
     }
 
     .sensor-section {
@@ -93,6 +112,7 @@
 </head>
 <body>
   <header>
+    <a href="https://discord.com/" target="_blank" class="discord-button">Join Our Discord</a>
     Welcome to YSlime Tracker
   </header>
 
@@ -140,20 +160,6 @@
         </ul>
       </div>
 
-<!-- BMI270 -->
-      <div class="price-box">
-        <h3>Gyroscope Sensor: LSM6DSO</h3>
-        <ul>
-          <li>5+0 (5 trackers): RM530 + Strap = RM570</li>
-          <li>6+0 (6 trackers): RM630 + Strap = RM675</li>
-          <li>5+1 (6 trackers): RM570 + Strap = RM615</li>
-          <li>3+3 (6 trackers): RM450 + Strap = RM490</li>
-          <li>5+3 (8 trackers): RM660 + Strap = RM710</li>
-          <li>5+4 (9 trackers): RM705 + Strap = RM760</li>
-          <li>Additional 2x Elbow Trackers: RM210</li>
-        </ul>
-      </div>
-
       <!-- Add other sensor price lists here -->
 
     </div>
@@ -176,88 +182,3 @@
   </footer>
 </body>
 </html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YSlime Tracker</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #d4f0fd; /* Light blue background */
-      color: #004080; /* Dark blue text */
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    header {
-      text-align: center;
-      padding: 40px 20px;
-      background: #00aaff; /* Blue header background */
-      color: white;
-      font-size: 2em;
-      border-radius: 0 0 20px 20px;
-      position: relative;
-    }
-
-    .discord-button {
-      position: absolute;
-      top: -30px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #5865f2;
-      color: white;
-      font-size: 1em;
-      text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: background 0.3s ease;
-    }
-
-    .discord-button:hover {
-      background: #4752c4;
-    }
-
-    .sensor-section {
-      margin: 20px 0;
-      padding: 20px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      text-align: center;
-      color: #00509e;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    .price-table {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .price-box {
-      flex: 1 1 calc(50% - 20px);
-      background: #e6f7ff;
-      border-radius: 10px;
-      padding: 15px;
-      box-shadow:
