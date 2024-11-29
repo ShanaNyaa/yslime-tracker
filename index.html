@@ -33,14 +33,13 @@
       display: inline-block;
       background: #5865f2;
       color: white;
-      font-size: 1em;
+      font-size: 0.9em; /* Reduced font size for smaller button */
       text-decoration: none;
-      padding: 10px 20px;
+      padding: 8px 16px; /* Smaller padding for button size */
       border-radius: 20px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: background 0.3s ease;
-      position: relative;
-      top: -40px; /* Position above the header */
+      margin-bottom: 20px; /* Adds space below the button */
     }
 
     .discord-button:hover {
@@ -112,7 +111,9 @@
 </head>
 <body>
   <header>
-    <a href="https://discord.com/" target="_blank" class="discord-button">Join Our Discord</a>
+    <div>
+      <a href="https://discord.com/" target="_blank" class="discord-button">Join Our Discord</a>
+    </div>
     Welcome to YSlime Tracker
   </header>
 
