@@ -4,55 +4,175 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YSlime Tracker</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #d4f0fd; /* Light blue background */
+      color: #004080; /* Dark blue text */
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #00aaff; /* Blue header background */
+      color: white;
+      font-size: 2em;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .sensor-section {
+      margin: 20px 0;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #00509e;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .price-table {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .price-box {
+      flex: 1 1 calc(50% - 20px);
+      background: #e6f7ff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-size: 0.9em;
+    }
+
+    .shipping-section {
+      margin: 20px 0;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #004080; /* Dark blue footer */
+      color: white;
+      margin-top: 40px;
+      border-radius: 20px 20px 0 0;
+    }
+
+    a {
+      color: #00aaff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to YSlime Tracker.</h1>
-    <div class="buttons">
-      <a href="#">🏬 Shopee</a>
-      <a href="#">🟣 Discord</a>
-    </div>
+    Welcome to YSlime Tracker
   </header>
-  <main>
-    <section class="gyroscope-info">
-      <h2>Available Gyroscope Sensors:</h2>
+
+  <div class="container">
+    <!-- Available Gyroscope Sensors Section -->
+    <div class="sensor-section">
+      <h2>Available Gyroscope Sensors</h2>
       <p>We offer several options for gyroscope sensors to fit your budget and performance needs:</p>
       <ul>
-        <li><b>BMI160:</b> Reliable and affordable, perfect for beginners.</li>
-        <li><b>BMI270:</b> Improved performance and precision at a great price.</li>
-        <li><b>LSM6DSO:</b> A balanced option for cost and performance.</li>
-        <li><b>LSM6DSV:</b> High-performance tracking for advanced users.</li>
-        <li><b>BNO085:</b> Industry-standard, premium reliability and stability, used in production SlimeVR.</li>
+        <li><strong>BMI160:</strong> Reliable and affordable, perfect for beginners.</li>
+        <li><strong>BMI270:</strong> Improved performance and precision at a great price.</li>
+        <li><strong>LSM6DSO:</strong> A balanced option for cost and performance.</li>
+        <li><strong>LSM6DSV:</strong> High-performance tracking for advanced users.</li>
+        <li><strong>BNO085:</strong> Industry-standard, premium reliability and stability, used in production SlimeVR.</li>
       </ul>
-    </section>
+    </div>
 
-    <section class="price-list">
-      <h2>Price List</h2>
-      <div class="prices">
-        <div class="sensor">
-          <h3>Gyroscope Sensor: BMI160</h3>
-          <p>5+0 (5 trackers): RM365 + Strap = RM405</p>
-          <p>6+0 (6 trackers): RM440 + Strap = RM485</p>
-          <p>5+1 (6 trackers): RM400 + Strap = RM445</p>
-          <p>3+3 (6 trackers): RM299 + Strap = RM345</p>
-          <p>5+3 (8 trackers): RM445 + Strap = RM495</p>
-          <p>5+4 (9 trackers): RM465 + Strap = RM515</p>
-          <p>Additional 2x Elbow Trackers: RM150</p>
-        </div>
-        <!-- Add more sensors here following the same format -->
+    <!-- Price List Section -->
+    <div class="price-table">
+      <!-- BMI160 -->
+      <div class="price-box">
+        <h3>Gyroscope Sensor: BMI160</h3>
+        <ul>
+          <li>5+0 (5 trackers): RM365 + Strap = RM405</li>
+          <li>6+0 (6 trackers): RM440 + Strap = RM485</li>
+          <li>5+1 (6 trackers): RM400 + Strap = RM445</li>
+          <li>3+3 (6 trackers): RM299 + Strap = RM345</li>
+          <li>5+3 (8 trackers): RM445 + Strap = RM495</li>
+          <li>5+4 (9 trackers): RM465 + Strap = RM515</li>
+          <li>Additional 2x Elbow Trackers: RM150</li>
+        </ul>
       </div>
-    </section>
 
-    <section class="shipping-info">
+      <!-- BMI270 -->
+      <div class="price-box">
+        <h3>Gyroscope Sensor: BMI270</h3>
+        <ul>
+          <li>5+0 (5 trackers): RM460 + Strap = RM500</li>
+          <li>6+0 (6 trackers): RM540 + Strap = RM585</li>
+          <li>5+1 (6 trackers): RM495 + Strap = RM540</li>
+          <li>3+3 (6 trackers): RM390 + Strap = RM435</li>
+          <li>5+3 (8 trackers): RM560 + Strap = RM610</li>
+          <li>5+4 (9 trackers): RM600 + Strap = RM650</li>
+          <li>Additional 2x Elbow Trackers: RM180</li>
+        </ul>
+      </div>
+
+<!-- BMI270 -->
+      <div class="price-box">
+        <h3>Gyroscope Sensor: LSM6DSO</h3>
+        <ul>
+          <li>5+0 (5 trackers): RM530 + Strap = RM570</li>
+          <li>6+0 (6 trackers): RM630 + Strap = RM675</li>
+          <li>5+1 (6 trackers): RM570 + Strap = RM615</li>
+          <li>3+3 (6 trackers): RM450 + Strap = RM490</li>
+          <li>5+3 (8 trackers): RM660 + Strap = RM710</li>
+          <li>5+4 (9 trackers): RM705 + Strap = RM760</li>
+          <li>Additional 2x Elbow Trackers: RM210</li>
+        </ul>
+      </div>
+
+      <!-- Add other sensor price lists here -->
+
+    </div>
+
+    <!-- Shipping Section -->
+    <div class="shipping-section">
       <h2>Shipping and Completion Time</h2>
-      <p><b>Shipping Fees:</b></p>
+      <p><strong>Shipping Fees:</strong></p>
       <ul>
         <li>RM10 for Peninsular Malaysia</li>
         <li>RM15 for Sabah and Sarawak</li>
       </ul>
-      <p><b>Completion Time:</b> Approximately 1–3 weeks, depending on the order complexity.</p>
-    </section>
-  </main>
+      <p><strong>Completion Time:</strong></p>
+      <p>Approximately 1–3 weeks, depending on the order complexity.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 YSlime Tracker. All rights reserved.
+  </footer>
 </body>
 </html>
