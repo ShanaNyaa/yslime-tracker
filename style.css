@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -6,18 +7,20 @@ body {
   background-color: #f0f8ff;
   color: #000;
   
-  /* Add background image */
-  background-image: url('https://imgur.com/a/Yr0gFuF'); /* Replace with your actual image URL */
-  background-size: cover; /* Ensure the image covers the entire page */
-  background-position: center; /* Center the image */
-  background-attachment: fixed; /* Optional: Keeps the image fixed while scrolling */
+  /* Background Image */
+  background-image: url('https://your-image-url.com/background.png'); /* Replace with your own image URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
+/* Header Styles */
 header {
   text-align: center;
   padding: 20px;
-  background-color: rgba(135, 206, 250, 0.8); /* Semi-transparent background for header */
+  background-color: rgba(135, 206, 250, 0.8); /* Semi-transparent blue */
   color: #fff;
+  position: relative;
 }
 
 header h1 {
@@ -25,13 +28,15 @@ header h1 {
   margin: 0;
 }
 
-header .buttons {
-  margin-top: 10px;
+.discord-button {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-header .buttons a {
+.discord-button a {
   text-decoration: none;
-  margin: 0 10px;
   padding: 10px 15px;
   background-color: #fff;
   color: #87cefa;
@@ -40,11 +45,12 @@ header .buttons a {
   font-weight: bold;
 }
 
-header .buttons a:hover {
+.discord-button a:hover {
   background-color: #4682b4;
   color: #fff;
 }
 
+/* Main Content */
 main {
   padding: 20px;
 }
@@ -65,6 +71,7 @@ ul {
   padding-left: 20px;
 }
 
+/* Price List Grid */
 .prices {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -72,7 +79,7 @@ ul {
 }
 
 .sensor {
-  background-color: #e6f7ff;
+  background-color: rgba(230, 247, 255, 0.9); /* Light blue background */
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -82,9 +89,11 @@ ul {
   margin: 0 0 10px;
 }
 
+/* Footer Styles */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: rgba(135, 206, 250, 0.8); /* Semi-transparent background for footer */
+  background-color: rgba(135, 206, 250, 0.8);
   color: #fff;
+  margin-top: 20px;
 }
