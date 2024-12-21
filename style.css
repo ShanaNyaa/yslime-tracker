@@ -48,6 +48,16 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.sensor-section a {
+  color: inherit; /* Inherit the color from the parent element */
+  text-decoration: none; /* Remove the underline */
+}
+
+.sensor-section a:hover {
+  text-decoration: underline; /* Optional: Add underline on hover */
+  color: #00aaff; /* Optional: Change text color on hover */
+}
+
 h2 {
   font-size: 1.5rem; /* Relative font size */
   text-align: center;
