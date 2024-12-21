@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #d4f0fd; /* Light blue background */
+  background: #03344B; /* Dark blue background */
   color: #004080; /* Dark blue text */
   font-size: 1rem; /* Base font size */
 }
@@ -16,7 +16,7 @@ body {
 header {
   text-align: center;
   padding: 40px 20px;
-  background: #00aaff; /* Blue header background */
+  background: #0088CC; /* Dark blue header background */
   color: white;
   font-size: 2rem; /* Relative font size */
   border-radius: 0 0 20px 20px;
@@ -43,9 +43,11 @@ header {
 .sensor-section {
   margin: 20px 0;
   padding: 20px;
-  background: white;
+  background: #1e1e1e;
+  color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow */
+  border: 1px solid #333; /* Dark border */
 }
 
 .sensor-section a {
@@ -58,45 +60,82 @@ header {
   color: #00aaff; /* Optional: Change text color on hover */
 }
 
+/* General text color for headings */
 h2 {
   font-size: 1.5rem; /* Relative font size */
   text-align: center;
-  color: #00509e;
+  color: #6DBEFF; /* Light blue text color */
 }
 
+/* General text color for paragraphs */
 p {
   font-size: 1.1rem; /* Relative font size */
+  color: #6DBEFF; /* Light blue text color */
 }
 
+/* Styling for unordered lists */
 ul {
-  padding-left: 20px;
+  padding-left: 20px; /* Indent list items */
 }
 
+/* Styling for list items */
 li {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Space between list items */
+  color: #6DBEFF; /* Light blue text color */
 }
 
+/* Grid layout for price boxes */
 .price-table {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout by default */
+  gap: 20px; /* Space between grid items */
 }
 
+@media (min-width: 768px) {
+  .price-table {
+    grid-template-columns: 1fr 1fr; /* Two column layout for screens wider than 768px */
+  }
+}
+
+/* Styling for individual price boxes */
 .price-box {
-  flex: 1 1 calc(50% - 20px);
-  background: white;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(50% - 20px); /* Flex properties for responsive layout */
+  background: #1e1e1e; /* Darker background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Inner padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow */
   font-size: 1rem; /* Ensure the same font size as the base font size */
+  border: 1px solid #333; /* Dark border */
+  padding: 20px; /* Additional padding */
+  border-radius: 8px; /* Additional rounding */
+  background-color: #1e1e1e; /* Darker background */
+  text-align: center; /* Center text */
 }
 
+/* Styling for price content within price boxes */
 .price-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center content horizontally */
   align-items: center; /* Center items vertically */
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Allow content to wrap */
+  text-align: center; /* Center text */
+}
+
+.price-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; /* Center the ul */
+}
+
+.price-content li {
+  text-align: center; /* Center text in li */
+}
+
+.price-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
 }
 
 .price-image {
@@ -124,7 +163,15 @@ li {
 .shipping-section {
   margin: 20px 0;
   padding: 20px;
-  background: white;
+  background: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-configurations-section {
+  margin: 20px 0;
+  padding: 20px;
+  background: #1e1e1e;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
