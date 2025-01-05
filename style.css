@@ -60,6 +60,104 @@ header {
   color: #00aaff; /* Optional: Change text color on hover */
 }
 
+/* Grid layout for introduction boxes */
+.introduction-table {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout by default */
+  gap: 20px; /* Space between grid items */
+}
+
+@media (min-width: 768px) {
+  .introduction-table {
+    grid-template-columns: 1fr; /* Two column layout for screens wider than 768px */
+    max-width: 750px; /* Limit the width of the grid container */
+    margin: 0 auto; /* Center the grid container */
+  }
+}
+
+/* Styling for individual introduction boxes */
+.introduction-box {
+  flex: 1 1 calc(50% - 20px); /* Flex properties for responsive layout */
+  background: #1e1e1e; /* Darker background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Inner padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow */
+  font-size: 1rem; /* Ensure the same font size as the base font size */
+  border: 1px solid #333; /* Dark border */
+  padding: 20px; /* Additional padding */
+  border-radius: 8px; /* Additional rounding */
+  background-color: #1e1e1e; /* Darker background */
+  text-align: center; /* Center text */
+}
+
+/* Styling for price content within introduction boxes */
+.introduction-content {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center items vertically */
+  flex-wrap: wrap; /* Allow content to wrap */
+  text-align: center; /* Center text */
+}
+
+.introduction-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; /* Center the ul */
+}
+
+.introduction-content li {
+  text-align: center; /* Center text in li */
+}
+
+.introduction-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+.introduction-image {
+  max-width: 30%; /* Default max-width for desktop */
+  height: auto;
+  margin-left: 10px; /* Add some space to the left of the image */
+  flex: 0 0 100px; /* Adjust this value to control the minimum width of the image */
+  border-radius: 10px; /* Add this line to make the image rounded */
+}
+
+@media (max-width: 768px) {
+  .introduction-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .introduction-image {
+    max-width: 100%; /* Max-width for mobile */
+    margin-left: 0;
+    margin-top: 20px;
+    flex: 0 0 auto;
+  }
+}
+
+.introduction-image {
+  max-width: 100%; /* Ensure the image does not exceed its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove default inline display */
+  margin: 0 auto; /* Center the image */
+  border-radius: 10px; /* Rounded corners */
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+
+  .introduction-image {
+    max-width: 100%; /* Max-width for mobile */
+    margin-left: 0;
+    margin-top: 20px;
+    flex: 0 0 auto;
+  }
+}
+
 .new-arrivals-section {
   margin: 20px 0;
   padding: 20px;
