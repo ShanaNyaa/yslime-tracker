@@ -60,6 +60,39 @@ header {
   color: #00aaff; /* Optional: Change text color on hover */
 }
 
+.new-arrivals-section {
+  margin: 20px 0;
+  padding: 20px;
+  background: #1e1e1e;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow */
+  border: 1px solid #333; /* Dark border */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px; /* Adjust the gap between images as needed */
+}
+
+.new-arrivals-image {
+  max-width: 100%; /* Ensure the image does not exceed its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove default inline display */
+  margin: 0 auto; /* Center the image */
+  border-radius: 10px; /* Rounded corners */
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+
+  .new-arrivals-image {
+    max-width: 100%; /* Max-width for mobile */
+    margin-left: 0;
+    margin-top: 20px;
+    flex: 0 0 auto;
+  }
+}
+
 /* General text color for headings */
 h2 {
   font-size: 1.5rem; /* Relative font size */
@@ -157,6 +190,42 @@ li {
     margin-left: 0;
     margin-top: 20px;
     flex: 0 0 auto;
+  }
+}
+
+.video-section {
+  margin: 20px 0;
+  padding: 20px;
+  padding-bottom: 0%;
+  background: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* Adjust the gap between columns as needed */
+  list-style-type: none;
+  padding: 0;
+}
+
+.video-list li {
+  width: 100%;
+  margin-bottom: 0%;
+}
+
+.video-list iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+  object-fit: cover; /* Ensure the video covers the entire iframe */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .video-list {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
   }
 }
 
