@@ -92,7 +92,7 @@ header {
 
 /* Styling for price content within introduction boxes */
 .introduction-content {
-  display: flex;
+  display: grid;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center items vertically */
   flex-wrap: wrap; /* Allow content to wrap */
